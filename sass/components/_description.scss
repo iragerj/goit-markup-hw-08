@@ -1,0 +1,30 @@
+.description {
+  padding-bottom: 94px;
+
+  &__text {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    color: $frequentWhite;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}

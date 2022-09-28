@@ -1,0 +1,103 @@
+.top-header {
+  border: 1px solid $secondaryBorderColor;
+
+  .nav-list__link {
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .contacts {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .contacts__link {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.nav-list {
+  display: flex;
+
+  &__item {
+    margin-right: 50px;
+    display: block;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__link {
+    color: $mainColor;
+    font-family: $mainFont;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    position: relative;
+    transition: color $animation;
+
+    &:hover,
+    &:focus {
+      color: $textHover;
+    }
+    &--current::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      display: block;
+      height: 4px;
+      background-color: $textHover;
+      border-radius: 2px;
+    }
+  }
+
+  &__link--current {
+    color: $textHover;
+  }
+}
+
+.contacts {
+  &__link {
+    color: $secondaryColor;
+    fill: $secondaryColor;
+    font-family: $mainFont;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    transition: color $animation, fill $animation;
+
+    &:hover,
+    &:focus {
+      color: $textHover;
+      fill: $textHover;
+    }
+  }
+
+  &__item {
+    margin-right: 50px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__icon--mail {
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+  }
+
+  &__icon--smartphone {
+    display: flex;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
+}

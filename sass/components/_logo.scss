@@ -1,0 +1,23 @@
+.logo {
+  color: $mainColor;
+  font-family: $secondaryFont;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  margin-right: 93px;
+}
+
+.bottom .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+
+.bottom .white {
+  color: $frequentWhite;
+}
+
+.blue {
+  color: $textHover;
+}

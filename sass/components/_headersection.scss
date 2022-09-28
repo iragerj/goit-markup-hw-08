@@ -1,0 +1,47 @@
+.header-section {
+  text-align: center;
+  padding-top: 211px;
+  padding-bottom: 189px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $bgcDarkGrey;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/jpg/bgr-img.jpg);
+}
+
+.header {
+  color: $frequentWhite;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.order-btn {
+  color: $frequentWhite;
+  background-color: $bgcButtonHover;
+  cursor: pointer;
+  font-family: $mainFont;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: none;
+  transition: background-color $animation, box-shadow $animation, border-radius $animation;
+
+  &:hover,
+  &:focus {
+    background-color: $orderBtnHover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+}
