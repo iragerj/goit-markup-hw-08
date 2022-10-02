@@ -6,9 +6,14 @@
     padding-top: 32px;
     padding-bottom: 32px;
   }
+
   .contacts {
-    display: flex;
-    margin-left: auto;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-left: auto;
+    }
   }
 
   .contacts__link {
@@ -19,7 +24,11 @@
 }
 
 .nav-list {
-  display: flex;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 
   &__item {
     margin-right: 50px;

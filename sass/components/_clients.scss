@@ -1,8 +1,17 @@
 .clients {
   &__list {
     display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
   }
 
+  @media screen and (min-width: 1200px) {
+    &__list {
+      display: flex;
+      margin-bottom: -30px;
+    }
+  }
   &__icon {
     width: 106px;
     height: 60px;
@@ -13,17 +22,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid $bgcLightGrey;
     border-radius: 4px;
     transition: fill $animation, border-color $animation;
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
 
     &:hover,
     &:focus {
       fill: $bgcButtonHover;
       border-color: $bgcButtonHover;
     }
+  }
+
+  &__item {
+    margin-bottom: 30px;
   }
 
   &__item:not(:last-child) {
