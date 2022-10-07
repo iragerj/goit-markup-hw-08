@@ -218,13 +218,25 @@
           <h2 class="description-header team__header">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/jpg/igor.jpg"
-                alt="Ігор"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/jpg/team/img1_l-@1x.jpg 1x, ./images/jpg/team/img1_l-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/jpg/team/img1_m-@1x.jpg 1x, ./images/jpg/team/img1_m-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/jpg/team/img1_s-@1x.jpg 1x, ./images/jpg/team/img1_s-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img class="team__img" src="./images/jpg/team/img1_s-@1x.jpg" alt="Ігор" />
+              </picture>
+
               <div class="team__description">
                 <h3 class="team__member">Ігор Дем'яненко</h3>
                 <p class="team__post">Product Designer</p>
@@ -257,13 +269,24 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/jpg/olga.jpg"
-                alt="Ольга"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/jpg/team/img2_l-@1x.jpg 1x, ./images/jpg/team/img2_l-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/jpg/team/img2_m-@1x.jpg 1x, ./images/jpg/team/img2_m-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/jpg/team/img2_s-@1x.jpg 1x, ./images/jpg/team/img2_s-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img class="team__img" src="./images/jpg/team/img2_s-@1x.jpg" alt="Ольга" />
+              </picture>
               <div class="team__description">
                 <h3 class="team__member">Ольга Рєпіна</h3>
                 <p class="team__post">Frontend Developer</p>
@@ -296,13 +319,24 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/jpg/mykola.jpg"
-                alt="Микола"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/jpg/team/img3_l-@1x.jpg 1x, ./images/jpg/team/img3_l-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/jpg/team/img3_m-@1x.jpg 1x, ./images/jpg/team/img3_m-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/jpg/team/img3_s-@1x.jpg 1x, ./images/jpg/team/img3_s-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img class="team__img" src="./images/jpg/team/img3_s-@1x.jpg" alt="Микола" />
+              </picture>
               <div class="team__description">
                 <h3 class="team__member">Микола Тарасов</h3>
                 <p class="team__post">Marketing</p>
@@ -335,8 +369,24 @@
               </div>
             </li>
             <li class="team__item">
-              <img class=team__img" src="./images/jpg/myhailo.jpg" alt="Михайло" width="270"
-              height="260" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/jpg/team/img4_l-@1x.jpg 1x, ./images/jpg/team/img4_l-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/jpg/team/img4_m-@1x.jpg 1x, ./images/jpg/team/img4_m-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/jpg/team/img4_s-@1x.jpg 1x, ./images/jpg/team/img4_s-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img class="team__img" src="./images/jpg/team/img4_s-@1x.jpg" alt="Михайло" />
+              </picture>
               <div class="team__description">
                 <h3 class="team__member">Михайло Єрмаков</h3>
                 <p class="team__post">UI Designer</p>
@@ -521,10 +571,10 @@
         </li>
       </ul>
       <ul class="mobile-socials__list">
-        <li><a href="" class="mobile-socials__link">Instagram </a></li>
-        <li><a href="" class="mobile-socials__link">Twitter</a></li>
-        <li><a href="" class="mobile-socials__link">Facebook</a></li>
-        <li><a href="" class="mobile-socials__link">LinkedIn</a></li>
+        <li class="mobile-socials__item"><a href="" class="mobile-socials__link">Instagram </a></li>
+        <li class="mobile-socials__item"><a href="" class="mobile-socials__link">Twitter</a></li>
+        <li class="mobile-socials__item"><a href="" class="mobile-socials__link">Facebook</a></li>
+        <li class="mobile-socials__item"><a href="" class="mobile-socials__link">LinkedIn</a></li>
       </ul>
     </div>
     <script src="./js/modal.js"></script>

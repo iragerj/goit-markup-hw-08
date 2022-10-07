@@ -9,9 +9,11 @@
   @media screen and (min-width: 1200px) {
     &__list {
       display: flex;
+      flex-wrap: nowrap;
       margin-bottom: -30px;
     }
   }
+
   &__icon {
     width: 106px;
     height: 60px;
@@ -22,19 +24,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 210px;
     height: 92px;
     border: 1px solid $bgcLightGrey;
     border-radius: 4px;
     transition: fill $animation, border-color $animation;
-
-    @media screen and (min-width: 768px) {
-      width: 226px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      width: 170px;
-    }
 
     &:hover,
     &:focus {
@@ -45,6 +38,15 @@
 
   &__item {
     margin-bottom: 30px;
+    width: calc((100% - 2 * 30px) / 2);
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 6 * 15px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
   }
 
   &__item:not(:last-child) {

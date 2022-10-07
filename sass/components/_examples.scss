@@ -1,8 +1,13 @@
 .examples {
   display: flex;
-  flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
 
   &-link {
     display: block;
@@ -21,7 +26,22 @@
   }
 
   &-item {
-    margin-right: 30px;
+    border: 1px solid $primaryBorderColor;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      margin-bottom: 30px;
+      margin-right: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &-item:not(:last-child) {
     margin-bottom: 30px;
   }
 
@@ -43,9 +63,6 @@
 
   &-descr {
     padding: 20px 24px;
-    border-right: 1px solid $primaryBorderColor;
-    border-bottom: 1px solid $primaryBorderColor;
-    border-left: 1px solid $primaryBorderColor;
   }
 
   &-wrapper {
