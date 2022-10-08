@@ -114,6 +114,7 @@
   &__list {
     display: flex;
     margin-top: 67px;
+    flex-wrap: wrap;
   }
 
   &__link {
